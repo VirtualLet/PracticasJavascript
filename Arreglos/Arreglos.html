@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
+    <!-- <link rel="stylesheet" type="text/css" media="screen" href="main.css" /> -->
+
+</head>
+
+<body>
+    
+    <h2>Practica con Arreglos</h2>
+    <label id="lblListaAmigos" name="lblListaAmigos"></label>
+    <br>
+    <label>Agrega un amigo</label>
+    <input type="text" id="iNombreAmigo">
+    <button type="button" onclick='AgregarElementos("iNombreAmigo",amigos,"lblMuestraAmigosAgregados")'>Agregar</button>
+
+    <br>
+    <label id="lblMuestraAmigosAgregados" name="lblMuestraAmigosAgregados"></label>
+    <hr>
+    <h4>Quieres unir amigos</h4>
+    <label id="lblListaAmigos2" name="lblListaAmigos2"></label>
+
+    <br>
+    <label>Agrega un amigo a mi lista 2</label>
+    <input id="iNombreAmigo2">
+    <button type="button" onclick='AgregarElementos("iNombreAmigo2",amigos2,"lblMuestraAmigosAgregados2")'> Agregar</button>
+    <br>
+    <label id="lblMuestraAmigosAgregados2" name="lblMuestraAmigosAgregados2"></label>
+    <br>
+    <button type="button" onclick="UnirAmigos()">Unir amigos</button>
+    <br>
+    <label id="lblMuestraAmigosUnidos" name="lblMuestraAmigosUnidos"></label>
+
+    <hr>
+    <h3>Como quieres ver serparados los nombres de tu lista de amigos </h3>
+    <label>Introduce el separador que deseas:</label>
+    <input id="iSeparador"> 
+    <button type="button" onclick="SeparadorElementos()">Separador de amigos</button>
+    <br>
+    <label id="lblMuestraSeparador"></label>
+
+    <hr>
+
+    <h3>Muestra Lista</h3>
+    <label id="lblListaAmigosUnidos"></label>
+
+    <h3>Muestra lista de amigos Ordenados Ascendente</h3>   
+    <button type="button" onclick="OrdenarAscendente()">Ordenar Asc</button>
+    <br>
+    <label id="lblMuestraOrdenAsc"></label>
+
+    <h3>Muestra lista de amigos Ordenados Descendente</h3>    
+    <button type="button" onclick="OrdenDescendente()">Ordenar Desc</button>
+    <br>
+    <label id="lblMuestraOrdenDesc"></label>
+
+</body>
+<script src="Arreglos.js"></script>
+
+</html>
