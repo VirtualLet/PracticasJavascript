@@ -14,6 +14,7 @@ var crearNodo=function(etiqueta,contenidoEtiqueta,nombreIdEtiqueta){
     return cElemento;
 };
 
+
 var nombreDiaDelaSemana= function(numeroDia){
     var dias=["Domingo","Lunes","Martes","Miercoles","Jueves","Viernes","Sabado"];
 
