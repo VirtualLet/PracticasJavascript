@@ -1,3 +1,24 @@
+var formatosDosDigitosVersionLarga=function(valor){
+    var formato;
+    if(valor <10)
+    {
+        formato="0"+valor;
+    }
+    else{
+        formato=valor;
+    }         
+    return formato;
+};
+
+
+var formatosDosDigitos=function(valor){   
+
+    return valor.toString().padStart(2,"0");           
+};
+
+
+
+
 (function () {
 
     var reloj = function () {
@@ -21,10 +42,7 @@
         var minutos = oFecha.getMinutes();
         var segundos = oFecha.getSeconds();
 
-        var tipoAmPm;
-        var formatoSegundos;
-        var formatoMinutos;
-        var formatoHoras;
+        var tipoAmPm;      
 
         if (hora > 12) {
             hora=hora-12;
@@ -32,45 +50,23 @@
         }
         else {
             tipoAmPm = "AM";
-        };
-
-        
-
-
-        if(hora <10){
-            formatoHoras="0"+hora;
-        }else{
-            formatoHoras=hora;
-        }
-
-        if(minutos<10)
-        {
-            formatoMinutos="0"+minutos;
-        }else{
-            formatoMinutos=minutos;
-        }
-
-        if (segundos < 10)
-        {  
-            formatoSegundos="0"+segundos;
-        }
-        else{   
-            formatoSegundos=segundos;
-        };
+        };      
 
         var listaDias = ["Domingo", "Lunes", "Martes", "Miercoles", "Jueves", "Viernes", "Sabado"];
+
         cNombreDia.textContent = listaDias[dia];
         cNumeroDia.textContent = diaDeLaSemana;
         var listaMeses = ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"];
         cNombreMes.textContent = listaMeses[mes];
         cNumeroAnio.textContent = anio;
-        cHora.textContent = formatoHoras;
-        cMinutos.textContent = formatoMinutos;
+        cHora.textContent = formatosDosDigitosVersionLarga(hora);
+        cMinutos.textContent = formatosDosDigitos(minutos);
         cTipoAmPm.textContent = tipoAmPm;
-        cSegundos.textContent = formatoSegundos;
+        cSegundos.textContent = formatosDosDigitos(segundos);
     };
 
 
     var intervaloSegundo = setInterval(reloj, 1000);
 
 }());
+

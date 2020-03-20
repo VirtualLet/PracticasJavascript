@@ -20,15 +20,9 @@ var nombreDiaDelaSemana= function(numeroDia){
 
     var nombreDia;
     nombreDia=dias[numeroDia];
-//   for(var i=0; i<= dias.length; i++)
-//     {
-//         if (numeroDia===i)
-//         {
-//           nombreDia=  dias[numeroDia];
-//         }
-//     }
   return nombreDia;
 };
+
 
 var nombreDiaDelMes=function(numeroMes){
     var mes=["Enero","Febrero","Marzo","Abril","Mayo","Junio","Julio","Agosto","Septiembre","Octubre","Noviembre","Diciembre"]

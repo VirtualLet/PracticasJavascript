@@ -1,0 +1,61 @@
+*{
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.contenedor{
+    margin: auto;
+    width: 90%;
+    border:1px solid red;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+    font-size: 16px;
+}
+
+.contenedorTarea{
+    height: 6em;
+    border:1px solid blue;
+    text-align: center;
+}
+
+
+.tarea{
+    border:1px solid black;
+    text-align: center;
+    width: 40%;
+    height: 30px;
+    
+}
+.boton{
+    height: 2em;
+}
+
+.contenedorLista{
+    height: 20em;
+    border:1px solid green;
+    padding-left: 10em;
+    padding-top: 2em;
+   
+}
+
+li a:hover{
+   
+    text-decoration-line: line-through;
+}
+
+li a {
+    text-decoration-line: none;
+}
+
+.formulario  input[type=text].error {
+    border: 5px solid #D32F2F;
+    color:red;
+
+}
+
+ /* #inputTarea::placeholder { color:red; }  */
+ /* .tarea::placeholder{color:red}; */
+ .error::placeholder{color:red};

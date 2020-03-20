@@ -80,3 +80,4 @@ function OrdenDescendente(){
     var cMuestraMensaje= document.getElementById("lblMuestraOrdenDesc");
     cMuestraMensaje.innerText=ordenar;
 }
+
